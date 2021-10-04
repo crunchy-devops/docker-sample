@@ -1,12 +1,3 @@
-# docker-sample
-essai dockerfile
-
-apt update
-apt -y install python3 python3-pip vim
-pip3 install flask 
-cat > /opt/app.py
-
-# app.py
 import os
 from flask import Flask
 app = Flask(__name__)
@@ -21,5 +12,3 @@ def hello():
 
 if __name__ == "__main__":
     app.run()
-
-FLASK_APP=/opt/app.py flask run --host=0.0.0.0
